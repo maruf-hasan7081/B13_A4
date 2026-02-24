@@ -118,14 +118,14 @@ function render() {
       b.className = "btn btn-success mt-2"; 
     } else if (job.status === "Rejected") {
       b.innerText = "REJECTED";
-      b.className = "btn btn-error mt-2";   // ✅ reset fully
+      b.className = "btn btn-error mt-2";   
     } else {
       b.innerText = "NOT APPLIED";
       b.className = "btn btn-active mt-2";
     }
   }
 
-  // filter by tab
+  
   let visible = 0;
 
   for (let i = 0; i < jobs.length; i++) {
@@ -144,10 +144,10 @@ function render() {
     }
   }
 
-  // ✅ ডানপাশে শুধু visible count দেখাবে (১, ২, ৩…)
+  
   tabJobCountEl.innerText = visible;
 
-  // empty state
+ 
   if (visible === 0) {
     noJobsSection.classList.remove("hidden");
     jobsContainer.classList.add("hidden");
