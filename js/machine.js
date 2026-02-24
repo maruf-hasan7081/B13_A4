@@ -14,7 +14,7 @@ const tabInterviewBtn = document.getElementById("tabInterview");
 const tabRejectedBtn = document.getElementById("tabRejected");
 
 window.onload = function () {
-  bootstrapJobs();
+  LeadJobs();
 
   tabAllBtn.addEventListener("click", () => setTab("All"));
   tabInterviewBtn.addEventListener("click", () => setTab("Interview"));
@@ -25,7 +25,7 @@ window.onload = function () {
   setTab("All");
 };
 
-function bootstrapJobs() {
+function LeadJobs() {
   const cardEls = jobsContainer.querySelectorAll(".card");
 
   jobs = [];
